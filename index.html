@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barangay Sta. Cruz</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <h2>Barangay Sta. Cruz</h2>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="welcome-message">
+            <h1>Welcome to Barangay Sta. Cruz</h1>
+            <p>Your community, your home. Discover our services and events!</p>
+            <button id="subscribe-btn" class="button">Subscribe to Newsletter</button>
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/311146034_401260452210133_8014653602153030878_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFq24UoONj9chyWJEyamnc7Ox79JWlqY6M7Hv0laWpjozo7QaiR7vL8n5Lkpef8Tty9ltBVCE-81NA0bu_QraTF&_nc_ohc=-cxDm3TM1G4Q7kNvgGgFCIe&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AHfLgNT5prjkwngPGtpgswi&oh=00_AYB9UZ-Z4iMnaw_X_EEIzPI4wEGV5R5pTWyX3ronnyzquQ&oe=6712F2AB" alt="Barangay Image">
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Community Development Programs</li>
+            <li>Health Services</li>
+            <li>Educational Assistance</li>
+            <li>Disaster Preparedness Training</li>
+            <li>Sanitation and Waste Management</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <div class="about-message">
+            <h2>About Us</h2>
+            <p>Barangay Sta. Cruz has been serving the community since 1950, promoting unity and progress.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/269690788_936642903628977_8555245224956278411_n.png?stp=dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHlXUpx32LcuvCasyj6OCFbFygg9cQk3iAXKCD1xCTeILdle09snLUMnzY4z9nlaz42tv7T_I9hkd7SoJ8QX5kl&_nc_ohc=vGv6JV3ywWUQ7kNvgHcSMrB&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=AYb3VngfJteqssaPBFRLBZz&oh=00_AYAUNgJpxW4i7DnkwQOJfPL0ENLigATEWval08dugV1ntw&oe=6712ECD0" alt="About Us Image">
+        </div>
+    </section>
+
+    <div id="newsletter-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

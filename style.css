@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEFA; /* Light Sky Blue */
+    color: #2F4F4F; /* Dark Slate Gray */
+    font-size: 18px; /* Slightly smaller font size */
+}
+
+nav {
+    background-color: #F08080; /* Light Coral */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+.nav-left {
+    display: flex;
+}
+
+#navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar li a {
+    color: white; /* Navigation Text Color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+#navbar li a:hover {
+    color: #FF4500; /* Deep Salmon on hover */
+}
+
+.nav-right {
+    font-size: 20px; /* Font size for title */
+    color: white; /* Title color */
+    font-weight: bold; /* Make title bold */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    text-align: left;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limit maximum width for images */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 28px; /* Slightly smaller heading size */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    background-color: white;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #3CB371; /* Medium Sea Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #2E8B57; /* Dark Sea Green */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items in the nav on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-left, .nav-right {
+        margin: 5px 0; /* Add some spacing */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center elements */
+        text-align: center; /* Center text */
+    }
+
+    .image-container {
+        order: -1; /* Move image above text on small screens */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+}
